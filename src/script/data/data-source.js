@@ -10,7 +10,9 @@ DataSource.prototype.searchClub = function (keyword) {
 
     if (filteredClubs.length) {
         this.onSuccess(filteredClubs);
-    } else {
-        this.onFailed(keyword + " is not found");
+    } else { 
+        this.onFailed(`${keyword} is not found`);
     }
 };
+
+
