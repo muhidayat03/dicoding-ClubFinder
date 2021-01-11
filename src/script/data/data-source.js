@@ -9,7 +9,7 @@ class DataSource {
 
     static searchClub(keyword) {
         return new Promise((resolve, reject) => {
-            const filteredClubs = clubs.filter((club) => {
+            const filteredClubs = clubs.filter((club) => { 
                 return club.name.toUpperCase().includes(keyword.toUpperCase());
             });
             if (filteredClubs.length) {
